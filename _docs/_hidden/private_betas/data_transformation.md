@@ -189,7 +189,7 @@ user = get_user_by_email(payload["form_response"]["hidden"]["email_address"])
 
 
 if user
-braze_id = user[“braze_id”]
+braze_id = user["braze_id"]
 {
   "attributes": [ 
     {
