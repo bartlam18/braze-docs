@@ -84,7 +84,7 @@ return {
       "email": payload.form_response.hidden.email_address,
       "_update_existing_only": true,
       "name": "weather_survey_completed",
-      "time": new Date(),
+      "time": new Date().toISOString(),
       "properties": {
         "form_id": payload.form_response.form_id
       }
@@ -123,7 +123,7 @@ return {
       "email": payload.form_response.hidden.email_address,
       "_update_existing_only": true,
       "name": "weather_survey_completed",
-      "time": new Date(),
+      "time": new Date().toISOString(),
       "properties": {
         "form_id": payload.form_response.form_id
       }
@@ -217,7 +217,7 @@ In this step, you will express how you'd like to map various webhook values to B
           "external_id": payload.user_id,
           "_update_existing_only": true,
           "name": payload.event_1,
-          "time": new Date(),
+          "time": new Date().toISOString(),
           "properties": {
             "property_1": payload.event_1.property_1
           }
